@@ -34,12 +34,8 @@ function update(req, res) {
       if (!catData) {
         return res.status(404).json({ message: 'Cat Not Found' });
       }
-      const data = {
-        name: req.body.name,
-        age: req.body.age,
-        ownerId: req.body.ownerId,
-      };
-      cat.update(data, { where: { id: req.params.id } })
+
+      cat.update({ ...cat, ...req.body })
         .then(() => res.status(200).json({ message: `Cat id ${req.params.id} updated` }))
         .catch((error) => res.status(400).json(error));
     })

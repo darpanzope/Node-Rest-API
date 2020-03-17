@@ -37,8 +37,7 @@ function update(req, res) {
         return res.status(404).json({ message: 'owner Not Found' });
       }
 
-      owner.update({ name: req.body.name },
-        { where: { id: req.params.id } })
+      owner.update({ ...owner, ...req.body })
         .then(() => res.status(200).json({ message: `Owner id ${req.params.id} updated` }))
         .catch((error) => res.status(400).json(error));
     })
