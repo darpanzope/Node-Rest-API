@@ -48,6 +48,24 @@ Owners
 * PUT /owners/update/:id
 * DELETE /owners/remove/:id
 
+### Creating Models
+```bash
+> sequelize model:create --name cat --attributes name:string,age:integer
+> sequelize model:create --name owner --attributes name:string
+```
+### Applying Migrations
+```bash
+> sequelize db:migrate
+```
+### Creating Seeds
+```bash
+> sequelize seed:generate --name demo-owner
+> sequelize seed:generate --name demo-cat
+```
+### Applying Seeds
+```bash
+> sequelize db:seed
+```
 ### Usage
 1. Start Project
 2. Open http://localhost:3000 in browser
