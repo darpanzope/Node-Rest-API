@@ -7,7 +7,6 @@ const catController = require('../controllers/cat-controller');
 router.get('/', catController.index);
 router.post('/create', catController.create);
 router.get('/:id', catController.show);
-router.get('/list', catController.list);
 router.put('/update/:id', catController.update);
 router.delete('/remove/:id', catController.destroy);
 
