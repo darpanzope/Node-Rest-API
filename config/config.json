@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "deqode",
+    "password": "deq@123",
+    "database": "practice",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "deqode",
+    "password": "deq@123",
+    "database": "practice",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "deqode",
+    "password": "deq@123",
+    "database": "practice",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
