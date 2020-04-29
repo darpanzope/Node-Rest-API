@@ -5,7 +5,7 @@
 ## Installation 
 Step 1 : Clone the repository
 ```zsh
-git clone https://gitlab.com/dzope/node_basic.git && cd node_basic
+git clone https://github.com/darpanzope/Node-Rest-API.git && cd "Node-Rest-API"
 ```
 Step 2 : Install required packages
 ```Javascript
